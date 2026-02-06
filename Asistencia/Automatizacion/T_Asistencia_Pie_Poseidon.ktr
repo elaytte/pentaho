@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformation>
+  <info>
+    <name>T_Asistencia_Pie_Poseidon</name>
+    <description/>
+    <extended_description/>
+    <trans_version/>
+    <trans_type>Normal</trans_type>
+    <trans_status>0</trans_status>
+    <directory>&#47;</directory>
+    <parameters>
+    </parameters>
+    <log>
+<trans-log-table><connection/>
+<schema/>
+<table/>
+<size_limit_lines/>
+<interval/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STATUS</id><enabled>Y</enabled><name>STATUS</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name><subject/></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name><subject/></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name><subject/></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name><subject/></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name><subject/></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name><subject/></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>STARTDATE</id><enabled>Y</enabled><name>STARTDATE</name></field><field><id>ENDDATE</id><enabled>Y</enabled><name>ENDDATE</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>DEPDATE</id><enabled>Y</enabled><name>DEPDATE</name></field><field><id>REPLAYDATE</id><enabled>Y</enabled><name>REPLAYDATE</name></field><field><id>LOG_FIELD</id><enabled>Y</enabled><name>LOG_FIELD</name></field></trans-log-table>
+<perf-log-table><connection/>
+<schema/>
+<table/>
+<interval/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>SEQ_NR</id><enabled>Y</enabled><name>SEQ_NR</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>INPUT_BUFFER_ROWS</id><enabled>Y</enabled><name>INPUT_BUFFER_ROWS</name></field><field><id>OUTPUT_BUFFER_ROWS</id><enabled>Y</enabled><name>OUTPUT_BUFFER_ROWS</name></field></perf-log-table>
+<channel-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>LOGGING_OBJECT_TYPE</id><enabled>Y</enabled><name>LOGGING_OBJECT_TYPE</name></field><field><id>OBJECT_NAME</id><enabled>Y</enabled><name>OBJECT_NAME</name></field><field><id>OBJECT_COPY</id><enabled>Y</enabled><name>OBJECT_COPY</name></field><field><id>REPOSITORY_DIRECTORY</id><enabled>Y</enabled><name>REPOSITORY_DIRECTORY</name></field><field><id>FILENAME</id><enabled>Y</enabled><name>FILENAME</name></field><field><id>OBJECT_ID</id><enabled>Y</enabled><name>OBJECT_ID</name></field><field><id>OBJECT_REVISION</id><enabled>Y</enabled><name>OBJECT_REVISION</name></field><field><id>PARENT_CHANNEL_ID</id><enabled>Y</enabled><name>PARENT_CHANNEL_ID</name></field><field><id>ROOT_CHANNEL_ID</id><enabled>Y</enabled><name>ROOT_CHANNEL_ID</name></field></channel-log-table>
+<step-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>LOG_FIELD</id><enabled>N</enabled><name>LOG_FIELD</name></field></step-log-table>
+    </log>
+    <maxdate>
+      <connection/>
+      <table/>
+      <field/>
+      <offset>0.0</offset>
+      <maxdiff>0.0</maxdiff>
+    </maxdate>
+    <size_rowset>10000</size_rowset>
+    <sleep_time_empty>50</sleep_time_empty>
+    <sleep_time_full>50</sleep_time_full>
+    <unique_connections>N</unique_connections>
+    <feedback_shown>Y</feedback_shown>
+    <feedback_size>50000</feedback_size>
+    <using_thread_priorities>Y</using_thread_priorities>
+    <shared_objects_file/>
+    <capture_step_performance>N</capture_step_performance>
+    <step_performance_capturing_delay>1000</step_performance_capturing_delay>
+    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
+    <dependencies>
+    </dependencies>
+    <partitionschemas>
+    </partitionschemas>
+    <slaveservers>
+    </slaveservers>
+    <clusterschemas>
+    </clusterschemas>
+  <created_user>-</created_user>
+  <created_date>2014&#47;01&#47;07 17:42:05.300</created_date>
+  <modified_user>-</modified_user>
+  <modified_date>2014&#47;01&#47;07 17:42:05.300</modified_date>
+  </info>
+  <notepads>
+  </notepads>
+  <connection>
+    <name>DB2_Desa_Sige</name>
+    <server>desadb2sige.mineduc.cl</server>
+    <type>DB2</type>
+    <access>Native</access>
+    <database>SIGE</database>
+    <port>50000</port>
+    <username>db2inst1</username>
+    <password>Encrypted 2be98afc86aa7f2e4af1bfc71da9fa6d4</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>50000</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>Job_DB2_Prod_Sige</name>
+    <server>vlpdb201.mineduc.cl</server>
+    <type>DB2</type>
+    <access>Native</access>
+    <database>SIGE</database>
+    <port>50000</port>
+    <username>bperez</username>
+    <password>Encrypted 2be98afc86aa79681b818bc62d19ea3d5</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>50000</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>Job_MySql_Desa_FichaEstablecimiento</name>
+    <server>192.168.32.58</server>
+    <type>MYSQL</type>
+    <access>Native</access>
+    <database>FICHA_ESTABLECIMIENTO</database>
+    <port>3306</port>
+    <username>root</username>
+    <password>Encrypted 2be98afc86ade938faa0bba718fc0fc94</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>EXTRA_OPTION_MYSQL.defaultFetchSize</code><attribute>500</attribute></attribute>
+      <attribute><code>EXTRA_OPTION_MYSQL.useCursorFetch</code><attribute>true</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>3306</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>STREAM_RESULTS</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>MySql_Desa_FichaEstablecimiento</name>
+    <server>192.168.32.58</server>
+    <type>MYSQL</type>
+    <access>Native</access>
+    <database>FICHA_ESTABLECIMIENTO</database>
+    <port>3306</port>
+    <username>root</username>
+    <password>Encrypted 2be98afc86ade938faa0bba718fc0fc94</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>EXTRA_OPTION_MYSQL.defaultFetchSize</code><attribute>500</attribute></attribute>
+      <attribute><code>EXTRA_OPTION_MYSQL.useCursorFetch</code><attribute>true</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>3306</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>STREAM_RESULTS</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>MySql_Desa_Sige_Consulta</name>
+    <server>192.168.32.58</server>
+    <type>MYSQL</type>
+    <access>Native</access>
+    <database>SIGE_CONSULTA</database>
+    <port>3306</port>
+    <username>root</username>
+    <password>Encrypted 2be98afc86ade938faa0bba718fc0fc94</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>EXTRA_OPTION_MYSQL.defaultFetchSize</code><attribute>500</attribute></attribute>
+      <attribute><code>EXTRA_OPTION_MYSQL.useCursorFetch</code><attribute>true</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>3306</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>STREAM_RESULTS</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>MySql_Local_TestLoop</name>
+    <server>localhost</server>
+    <type>MYSQL</type>
+    <access>Native</access>
+    <database>TestLoop</database>
+    <port>3306</port>
+    <username>root</username>
+    <password>Encrypted </password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>EXTRA_OPTION_MYSQL.defaultFetchSize</code><attribute>500</attribute></attribute>
+      <attribute><code>EXTRA_OPTION_MYSQL.useCursorFetch</code><attribute>true</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>3306</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>STREAM_RESULTS</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>SICPS</name>
+    <server>10.10.128.10</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>mepredb</database>
+    <port>1521</port>
+    <username>SICPS_INBOX</username>
+    <password>Encrypted 2be98afc86aa7f2e4a610a075da87ac8b</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>SIGE</name>
+    <server>vlpdb201.mineduc.cl</server>
+    <type>DB2</type>
+    <access>Native</access>
+    <database>SIGE</database>
+    <port>50000</port>
+    <username>bperez</username>
+    <password>Encrypted 2be98afc86aa79681b818bc62d19ea3d5</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>50000</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>SIGE_CONSULTA</name>
+    <server>192.168.32.58</server>
+    <type>MYSQL</type>
+    <access>Native</access>
+    <database>SIGE_CONSULTA</database>
+    <port>3306</port>
+    <username>root</username>
+    <password>Encrypted 2be98afc86ade938faa0bba718fc0fc94</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>EXTRA_OPTION_MYSQL.defaultFetchSize</code><attribute>500</attribute></attribute>
+      <attribute><code>EXTRA_OPTION_MYSQL.useCursorFetch</code><attribute>true</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>3306</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>STREAM_RESULTS</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>TMP_SIGE</name>
+    <server>192.168.30.51</server>
+    <type>DB2</type>
+    <access>Native</access>
+    <database>SIGE</database>
+    <port>50000</port>
+    <username>db2inst1</username>
+    <password>Encrypted 2be98afc86aa79681b818bc62d19ea3d5</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>50000</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <order>
+  <hop> <from>ASISTENCIA_PIE</from><to>ASISTENCIA_DECLARADA_PIE_POSEIDON</to><enabled>Y</enabled> </hop>  </order>
+  <step>
+    <name>ASISTENCIA_DECLARADA_PIE_POSEIDON</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Job_DB2_Prod_Sige</connection>
+    <schema>DB2ADMIN</schema>
+    <table>SIGE_ASISTENCIA_DECLARADA_PIE_POSEIDON</table>
+    <commit>1000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+        <field>
+          <column_name>ANIO_ASIST</column_name>
+          <stream_name>ANO_ESCOLAR</stream_name>
+        </field>
+        <field>
+          <column_name>ANIO_PAGO</column_name>
+          <stream_name>ANO_ESCOLAR_1</stream_name>
+        </field>
+        <field>
+          <column_name>MES_PAGO</column_name>
+          <stream_name>MES_PAGO</stream_name>
+        </field>
+        <field>
+          <column_name>MES_ASIST</column_name>
+          <stream_name>MES_ESCOLAR</stream_name>
+        </field>
+        <field>
+          <column_name>RBD</column_name>
+          <stream_name>RBD</stream_name>
+        </field>
+        <field>
+          <column_name>COD_ENSE</column_name>
+          <stream_name>COD_ENS_SUBV</stream_name>
+        </field>
+        <field>
+          <column_name>ASISTENCIA_MES</column_name>
+          <stream_name>ASIS_PROMEDIO</stream_name>
+        </field>
+        <field>
+          <column_name>MATRICULA_INICIAL</column_name>
+          <stream_name>MATRICULA_INICIAL</stream_name>
+        </field>
+        <field>
+          <column_name>ALTAS</column_name>
+          <stream_name>ALTAS</stream_name>
+        </field>
+        <field>
+          <column_name>BAJAS</column_name>
+          <stream_name>BAJAS</stream_name>
+        </field>
+        <field>
+          <column_name>MATRICULA_FINAL</column_name>
+          <stream_name>MATRICULA_FINAL</stream_name>
+        </field>
+        <field>
+          <column_name>NIVEL</column_name>
+          <stream_name>COD_GRA_SUBV</stream_name>
+        </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>785</xloc>
+      <yloc>198</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>ASISTENCIA_PIE</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Job_DB2_Prod_Sige</connection>
+    <sql>SELECT A.ANO_ESCOLAR,A.ANO_ESCOLAR,A.MES_PAGO,A.MES_ESCOLAR,A.RBD,A.COD_ENS_SUBV,A.COD_GRA_SUBV,
+COALESCE(SUM(A.ASIS_PROMEDIO),0) ASIS_PROMEDIO,
+COALESCE(SUM(A.MATRICULA_INICIAL),0) MATRICULA_INICIAL,
+COALESCE(SUM(A.ALTAS),0) ALTAS,
+COALESCE(SUM(A.BAJAS),0) BAJAS,
+COALESCE(SUM(A.MATRICULA_FINAL),0) MATRICULA_FINAL
+FROM
+(SELECT A.ANO_ESCOLAR,A.MES_PAGO,A.MES_ESCOLAR,A.RBD,A.COD_ENS_SUBV,A.COD_GRA_SUBV,
+COALESCE(SUM(ASIS_PROMEDIO),0) ASIS_PROMEDIO
+,COALESCE((SELECT SUM(C.MATRICULA) FROM DB2ADMIN.VIEW_MATRICULA_INICIAL_PIE C WHERE C.ANO_ESCOLAR = A.ANO_ESCOLAR AND C.MES_ESCOLAR = A.MES_ESCOLAR AND C.RBD = A.RBD AND C.COD_ENS_SUBV = A.COD_ENS_SUBV AND C.COD_GRA_SUBV = A.COD_GRA_SUBV and c.MES_PAGO = a.MES_PAGO),0) MATRICULA_INICIAL
+,COALESCE((SELECT SUM(C.MATRICULA) FROM DB2ADMIN.VIEW_MATRICULA_ALTAS_PIE  C WHERE C.ANO_ESCOLAR = A.ANO_ESCOLAR AND C.MES_ESCOLAR = A.MES_ESCOLAR AND C.RBD = A.RBD AND C.COD_ENS_SUBV = A.COD_ENS_SUBV AND C.COD_GRA_SUBV = A.COD_GRA_SUBV and c.MES_PAGO = a.MES_PAGO),0) ALTAS
+,COALESCE((SELECT SUM(C.MATRICULA) FROM DB2ADMIN.VIEW_MATRICULA_BAJAS_PIE  C WHERE C.ANO_ESCOLAR = A.ANO_ESCOLAR AND C.MES_ESCOLAR = A.MES_ESCOLAR AND C.RBD = A.RBD AND C.COD_ENS_SUBV = A.COD_ENS_SUBV AND C.COD_GRA_SUBV = A.COD_GRA_SUBV  and c.MES_PAGO = a.MES_PAGO),0) BAJAS
+,COALESCE((SELECT SUM(C.MATRICULA) FROM DB2ADMIN.VIEW_MATRICULA_FINAL_PIE  C WHERE C.ANO_ESCOLAR = A.ANO_ESCOLAR AND C.MES_ESCOLAR = A.MES_ESCOLAR AND C.RBD = A.RBD AND C.COD_ENS_SUBV = A.COD_ENS_SUBV AND C.COD_GRA_SUBV = A.COD_GRA_SUBV  and c.MES_PAGO = a.MES_PAGO),0) MATRICULA_FINAL
+FROM DB2ADMIN.SIGE_ASISTENCIA_DECLARADA_PIE A
+WHERE
+A.ANO_ESCOLAR=${v_ano_escolar}
+AND A.MES_PAGO=${v_mes_pago}
+AND A.ESTADO_PAGO=1 
+and A.MES_ESCOLAR=${v_mes_actual}
+AND A.COD_ENS_SUBV IS NOT NULL AND  A.COD_GRA_SUBV IS NOT NULL
+AND A.RBD &lt; 60000
+GROUP BY  A.ANO_ESCOLAR,A.MES_PAGO,A.MES_ESCOLAR,A.RBD,A.COD_ENS_SUBV,A.COD_GRA_SUBV
+WITH UR
+) A
+GROUP BY A.ANO_ESCOLAR,A.MES_PAGO,A.MES_ESCOLAR,A.RBD,A.COD_ENS_SUBV,A.COD_GRA_SUBV
+</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>Y</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>253</xloc>
+      <yloc>204</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step_error_handling>
+  </step_error_handling>
+   <slave-step-copy-partition-distribution>
+</slave-step-copy-partition-distribution>
+   <slave_transformation>N</slave_transformation>
+</transformation>
